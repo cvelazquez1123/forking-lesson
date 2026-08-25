@@ -22,7 +22,7 @@ import urllib.parse
 import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from normalize import normalize_variant_ex  # noqa: E402
+from normalize import STANDARD_SIZES, normalize_variant_ex  # noqa: E402
 
 USER_AGENT = (
     "fragrance-finder/1.0 (+https://github.com/cvelazquez1123/forking-lesson) "
@@ -181,6 +181,25 @@ def load_fixture(path: str):
     return payload
 
 
+def print_rows(rows, show_title: bool = False) -> None:
+    """Eyeball table. A `*` marks a size that is not a standard bottle."""
+    header = (f"{'BRAND':<20} {'LINE':<24} {'CONC':<7} {'SIZE':>8} "
+              f"{'COND':<8} {'PRE':<4} {'PRICE':>9}")
+    print(header)
+    print("-" * len(header))
+    for row in rows:
+        odd = "*" if float(row["size_ml"]) not in STANDARD_SIZES else " "
+        print(f"{(row['brand'] or '-'):<20.20} {row['line']:<24.24} "
+              f"{(row['concentration'] or '-'):<7} "
+              f"{str(row['size_ml']) + 'ml':>7}{odd} "
+              f"{row['condition']:<8} {('YES' if row['preorder'] else '-'):<4} "
+              f"${row['price']:>8.2f}")
+        if show_title:
+            print(f"{'':<20} raw: {row['product_title']!r}")
+            print(f"{'':<20}      variant={row['variant_title']!r}")
+    print("-" * len(header))
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Scrape one Shopify store and print parsed rows.")
     ap.add_argument("domain")
@@ -189,6 +208,10 @@ def main() -> int:
     ap.add_argument("--sells-dupes", action="store_true")
     ap.add_argument("--sample", type=int, default=20, help="rows to print (0 = all)")
     ap.add_argument("--probe-only", action="store_true")
+    ap.add_argument("--sort", choices=("size_ml", "price", "brand"), default=None,
+                    help="sort the printed rows (default: catalogue order)")
+    ap.add_argument("--show-title", action="store_true",
+                    help="print the raw product/variant titles under each row")
     ap.add_argument("--fixture", default=None,
                     help="read products.json from a local file instead of the network")
     args = ap.parse_args()
@@ -219,19 +242,29 @@ def main() -> int:
         with requests.Session() as session:
             rows, stats = scrape_store(store, session)
 
+    if args.sort == "size_ml":
+        rows.sort(key=lambda r: (float(r["size_ml"]), (r["brand"] or "").lower(), r["line"].lower()))
+    elif args.sort == "price":
+        rows.sort(key=lambda r: r["price"])
+    elif args.sort == "brand":
+        rows.sort(key=lambda r: ((r["brand"] or "~").lower(), r["line"].lower()))
+
     limit = len(rows) if args.sample == 0 else args.sample
-    header = f"{'BRAND':<22} {'LINE':<26} {'CONC':<8} {'SIZE':>6} {'COND':<8} {'PRE':<4} {'PRICE':>9}"
-    print(header)
-    print("-" * len(header))
-    for row in rows[:limit]:
-        print(f"{(row['brand'] or '-'):<22.22} {row['line']:<26.26} "
-              f"{(row['concentration'] or '-'):<8} {str(row['size_ml'])+'ml':>6} "
-              f"{row['condition']:<8} {('YES' if row['preorder'] else '-'):<4} "
-              f"${row['price']:>8.2f}")
-    print("-" * len(header))
+    print_rows(rows[:limit], show_title=args.show_title)
+
     print(f"{stats['products']} products -> {stats['variants']} variants -> "
           f"{stats['rows']} rows kept; dropped: "
           f"{json.dumps(stats['drops'], sort_keys=True)}")
+
+    odd = [r for r in rows if float(r["size_ml"]) not in STANDARD_SIZES]
+    print(f"\nNON-STANDARD SIZES: {len(odd)} of {len(rows)} rows "
+          f"(anything not in {'/'.join(str(s) for s in STANDARD_SIZES)}ml)")
+    for row in odd[:40]:
+        print(f"  {str(row['size_ml']) + 'ml':>9}  <- product: {row['product_title']!r}")
+        print(f"  {'':>9}     variant: {row['variant_title']!r}")
+    if len(odd) > 40:
+        print(f"  ... and {len(odd) - 40} more")
+
     if stats.get("error"):
         print(f"error: {stats['error']}")
     return 0

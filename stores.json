@@ -5,7 +5,7 @@
     "platform": "shopify",
     "collection": null,
     "free_ship_threshold": null,
-    "flat_ship": null,
+    "flat_ship": 10,
     "sells_dupes": false,
     "active": true
   },
@@ -15,7 +15,7 @@
     "platform": "shopify",
     "collection": null,
     "free_ship_threshold": 100,
-    "flat_ship": null,
+    "flat_ship": 10,
     "sells_dupes": false,
     "active": true
   },
@@ -25,7 +25,7 @@
     "platform": "shopify",
     "collection": "fragrances",
     "free_ship_threshold": 99,
-    "flat_ship": null,
+    "flat_ship": 10,
     "sells_dupes": false,
     "active": true
   },
@@ -35,7 +35,7 @@
     "platform": "shopify",
     "collection": "full-catalog",
     "free_ship_threshold": 100,
-    "flat_ship": null,
+    "flat_ship": 10,
     "sells_dupes": false,
     "active": true
   },
@@ -45,7 +45,7 @@
     "platform": "shopify",
     "collection": null,
     "free_ship_threshold": null,
-    "flat_ship": null,
+    "flat_ship": 10,
     "sells_dupes": true,
     "active": true
   },
@@ -55,7 +55,7 @@
     "platform": "unknown",
     "collection": null,
     "free_ship_threshold": null,
-    "flat_ship": null,
+    "flat_ship": 10,
     "sells_dupes": false,
     "active": true
   }

@@ -25,7 +25,8 @@ pip install requests
 python3 -m unittest discover -s test          # 40 tests, all must pass
 
 # eyeball one store's parse before trusting it
-python3 src/shopify.py aurafragrance.com --name "Aura Fragrance" --sample 20
+python3 src/shopify.py aurafragrance.com --name "Aura Fragrance" \
+        --sample 50 --sort size_ml --show-title
 
 # full run -> web/data/index.json, web/data/lows.json, data/history.jsonl
 python3 src/build_index.py
@@ -181,14 +182,23 @@ Set `"platform": "unknown"` to have the run probe it. Set `collection` if the
 store sells more than fragrance. Then eyeball it before trusting it:
 
 ```bash
-python3 src/shopify.py someshop.com --name "Some Shop" --sample 20
+python3 src/shopify.py someshop.com --name "Some Shop" \
+        --sample 50 --sort size_ml --show-title
 ```
+
+`--sort size_ml --show-title` prints the raw product and variant titles beside
+each parsed size and lists every non-standard size at the end, which is how you
+check size parsing against real titles before trusting any price. The `scrape`
+workflow runs the same thing on manual dispatch (`eyeball_domain` input) and
+puts it in the run summary.
 
 ## Known limitations
 
-- **`flat_ship` is `null` for every seeded store**, so shipping currently counts
-  as **$0** and `landed == price − discount`. Fill in each store's real flat
-  rate to make the ranking honest; that is a one-line edit per store in
+- **`flat_ship` is a `$10` placeholder for every store**, not a researched
+  rate. Stores with no `free_ship_threshold` (aurafragrance.com,
+  shoparomatix.com) therefore take +$10 on *every* listing — which
+  over-penalises them if they actually ship free. Replace the placeholder with
+  each store's real rate and threshold; it is a one-line edit per store in
   `stores.json`.
 - **`olfactoryfactoryllc.com` has never been probed** — no network egress was
   available in the session that built this. The first workflow run either

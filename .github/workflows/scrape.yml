@@ -5,6 +5,11 @@ on:
     # every 6h, offset off the hour so we are not part of the :00 stampede
     - cron: '17 */6 * * *'
   workflow_dispatch:
+    inputs:
+      eyeball_domain:
+        description: 'Print 50 parsed rows from this domain, sorted by size_ml'
+        required: false
+        default: 'aurafragrance.com'
 
 concurrency:
   group: scrape
@@ -33,6 +38,27 @@ jobs:
 
       - name: Build index
         run: python src/build_index.py
+
+      - name: Eyeball parsed rows
+        # Manual runs print a sample with the raw titles beside the parsed size,
+        # so size parsing can be checked against real listings before the prices
+        # are trusted. Passed through env, never interpolated into the script.
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          EYEBALL_DOMAIN: ${{ inputs.eyeball_domain }}
+        run: |
+          if [ -z "$EYEBALL_DOMAIN" ]; then
+            echo "no eyeball domain requested"
+            exit 0
+          fi
+          python src/shopify.py "$EYEBALL_DOMAIN" \
+            --sample 50 --sort size_ml --show-title 2>&1 | tee /tmp/eyeball.txt
+          {
+            echo "### 50 parsed rows from $EYEBALL_DOMAIN (by size_ml)"
+            echo '```'
+            cat /tmp/eyeball.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit if changed
         run: |
