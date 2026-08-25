@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import re
 import unicodedata
+from functools import lru_cache
 
 # --- constants ---------------------------------------------------------------
 
@@ -273,7 +274,21 @@ CONNECTOR_TOKENS = {"de", "du", "des", "di", "of", "and", "the", "le", "la",
                     "les", "by", "&", "d", "el", "al"}
 
 
-def _brand_prefix_candidates(brand: str) -> list[str]:
+MAX_BRAND_TOKENS = 6      # beyond this a "vendor" is a sentence, not a brand
+
+
+@lru_cache(maxsize=4096)
+def _brand_patterns(candidate: str):
+    """Compiled once per candidate. Uncached, a long vendor string thrashes the
+    re module's 512-entry cache and every title recompiles from scratch."""
+    escaped = re.escape(candidate)
+    return (re.compile(r"\bby\s+" + escaped + r"\b", re.I),
+            re.compile(r"^\s*" + escaped + r"\b[\s,\-–—:|]*", re.I),
+            re.compile(r"^(.*?)[\s,\-–—:|]+" + escaped + r"[\s.]*$", re.I))
+
+
+@lru_cache(maxsize=4096)
+def _brand_prefix_candidates(brand: str) -> tuple[str, ...]:
     """Every contiguous run of brand tokens, longest first.
 
     Stores rarely print the vendor string verbatim: vendor "Christian Dior"
@@ -281,7 +296,7 @@ def _brand_prefix_candidates(brand: str) -> list[str]:
     Runs (rather than single tokens) keep "Van Cleef & Arpels" -> "Van Cleef"
     from being chopped down to a stray "Cleef".
     """
-    tokens = [t for t in re.split(r"\s+", brand.strip()) if t]
+    tokens = [t for t in re.split(r"\s+", brand.strip()) if t][:MAX_BRAND_TOKENS]
     candidates = []
     for i in range(len(tokens)):
         for j in range(len(tokens), i, -1):
@@ -289,7 +304,7 @@ def _brand_prefix_candidates(brand: str) -> list[str]:
             if all(t.lower().strip(".&") in CONNECTOR_TOKENS or len(t) < 2 for t in run):
                 continue
             candidates.append(" ".join(run))
-    return sorted(set(candidates), key=len, reverse=True)
+    return tuple(sorted(set(candidates), key=len, reverse=True))
 
 
 def _strip_brand(text: str, brand: str) -> str:
@@ -309,19 +324,19 @@ def _strip_brand(text: str, brand: str) -> str:
     while changed:
         changed = False
         for candidate in candidates:
-            escaped = re.escape(candidate)
+            by_rx, prefix_rx, suffix_rx = _brand_patterns(candidate)
 
-            stripped = re.sub(r"\bby\s+" + escaped + r"\b", " ", text, flags=re.I)
+            stripped = by_rx.sub(" ", text)
             if stripped != text and _tidy(stripped):
                 text, changed = stripped, True
                 break
 
-            stripped = re.sub(r"^\s*" + escaped + r"\b[\s,\-–—:|]*", " ", text, flags=re.I)
+            stripped = prefix_rx.sub(" ", text)
             if stripped != text and _tidy(stripped):
                 text, changed = stripped, True
                 break
 
-            match = re.search(r"^(.*?)[\s,\-–—:|]+" + escaped + r"[\s.]*$", text, flags=re.I)
+            match = suffix_rx.search(text)
             if match:
                 head = _tidy(match.group(1))
                 words = head.split()
