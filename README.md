@@ -67,9 +67,9 @@ means nothing.
 
 | field | rule |
 |---|---|
-| `brand` | Shopify `vendor`, minus `General` and the store's own name. |
+| `brand` | Shopify `vendor`, minus the store's own name, minus junk (`General`, `Shop`, `Default`, `Fragrance`…), then run through a reviewed alias map so one house is one brand — `Christian Dior` and `Dior` are the same key, `Kilian` and `By Kilian` are the same key. |
 | `concentration` | `product_type` first (many stores file it correctly there), then a title regex. Normalized to EDT/EDP/EDC/Parfum/Extrait/Elixir/Cologne. **Never guessed** — no match means `null`. |
-| `size_ml` | Variant title first, then product title. Explicit ml is trusted; oz is `× 29.5735` then snapped to 50/75/100/125/150/200 when within 3ml, so `3.4 OZ` is a 100ml bottle rather than 100.55. |
+| `size_ml` | Variant title first, then product title. Explicit ml is trusted; oz is `× 29.5735` then snapped to 50/60/70/75/80/90/100/120/125/150/200 when within 3ml, so `3.4 OZ` is a 100ml bottle rather than 100.55 and `2.0 OZ` is a 60ml rather than 59.1. Entries stay ≥5ml apart: a denser set starts snapping 1.6oz (47.3ml) down to 45 instead of up to its real 50. |
 | `condition` | `tester` / `unboxed` / `sealed` / `unknown`. **Display badge only.** Testers are never filtered out — a cheap tester is the good outcome. |
 | `preorder` | `pre-order` / `pre order` / `preorder`, including the spaced-hyphen `PRE - ORDER` form. The row is kept and flagged: the price is real, it just is not buyable today. |
 | `line` | Title minus brand, size, concentration, condition, preorder marker and filler (`for men`, `spray`, `by <brand>`, a leading `new`…). |
@@ -90,10 +90,23 @@ All sizes collapse into one row — that is the point of the tool. Stores with
 `sells_dupes: true` get a `dupe:` prefix, so a clone house never merges with the
 designer original.
 
-Brand stripping is **prefix-only**, and tries every contiguous run of vendor
-tokens longest-first: vendor `Christian Dior` strips `Dior ` off a title, vendor
-`Van Cleef & Arpels` strips `Van Cleef` (not a stray `Van`), and `Bleu de
-Chanel` survives vendor `Chanel` intact because the brand is not at the front.
+The brand is stripped from the title **wherever the store put it** — front
+(`Dior Sauvage`), tail (`Sauvage Dior`, `Craze Armaf`), after `by`
+(`Black Phantom by Kilian`, even though that vendor is literally `By Kilian`),
+and repeatedly, since `Chrome Azzaro by Loris Azzaro` needs two passes. Every
+contiguous run of vendor tokens is tried longest-first, so `Van Cleef & Arpels`
+strips `Van Cleef` rather than a stray `Van`.
+
+The tail case is the dangerous one, because `Bleu de Chanel` also ends in its
+brand. A trailing brand is only removed when the word before it is **not** a
+connector, which cuts `Sauvage Dior` to `Sauvage` while leaving `Bleu de
+Chanel` and `L'Eau d'Issey` whole. Nothing is ever stripped to nothing.
+
+`BRAND_ALIASES` in `normalize.py` is deliberately a **static, hand-checked map**
+rather than a rule inferred at runtime: a key that changes when a new store
+appears would orphan its own price history. It is also why `Prada` is not
+merged into `Agatha Ruiz de la Prada`, which the obvious token-subset rule
+would have done.
 
 ## Landed cost
 
@@ -195,16 +208,15 @@ puts it in the run summary.
 ## Known limitations
 
 - **`flat_ship` is a `$10` placeholder** at five of the six stores — a guess,
-  not a researched rate. aurafragrance.com is the exception: it does not charge
-  shipping, so it stays `null` (which the cost model treats as $0).
-  shoparomatix.com has a placeholder rate *and* no known free-ship threshold,
-  so it currently takes +$10 on **every** listing with no way to earn it back.
-  Replace the placeholders with real rates and thresholds; one line per store
-  in `stores.json`.
-- **`flat_ship: null` is overloaded.** The cost model reads it as $0, but the
-  app's store list badges it "ship cost unknown" — true for a store nobody has
-  checked, wrong for aurafragrance.com, which is known to ship free. Use `0`
-  instead of `null` to say "free" unambiguously; the arithmetic is identical.
+  not a researched rate. aurafragrance.com is `0`, meaning known-free rather
+  than unchecked. shoparomatix.com has a placeholder rate *and* no known
+  free-ship threshold, so it takes +$10 on **every** listing with no way to
+  earn it back. Replace the placeholders with real rates and thresholds; one
+  line per store in `stores.json`.
+- **Some vendor fields are simply wrong**, and no amount of aliasing fixes it:
+  `Exclamation for Women by Coty` ships with vendor `Exclamation`, so the brand
+  and the line come out swapped. Rows like that index and search fine, they
+  just will not merge with the same fragrance carried elsewhere.
 - **`olfactoryfactoryllc.com` has never been probed** — no network egress was
   available in the session that built this. The first workflow run either
   promotes it to shopify or logs `NEEDS ADAPTER`.

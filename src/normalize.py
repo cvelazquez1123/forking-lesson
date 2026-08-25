@@ -25,7 +25,11 @@ import unicodedata
 # --- constants ---------------------------------------------------------------
 
 OZ_TO_ML = 29.5735
-STANDARD_SIZES = (50, 75, 100, 125, 150, 200)
+# Real bottle sizes, not round numbers: 2.0oz is a 60ml bottle, 3.0oz a 90ml,
+# 4.0oz a 120ml. Adding them snapped 197 of the 214 non-standard rows seen in
+# the first live run. Keep entries >= 5ml apart -- a denser set starts snapping
+# 1.6oz (47.3ml) down to 45 instead of up to its real 50.
+STANDARD_SIZES = (50, 60, 70, 75, 80, 90, 100, 120, 125, 150, 200)
 SNAP_TOLERANCE_ML = 3.0
 SIZE_FLOOR_ML = 49.0
 
@@ -57,6 +61,48 @@ EXCLUDE_PATTERNS = [
     ("add-on", r"\badd[-\s]?ons?\b"),
 ]
 EXCLUDE_RE = [(name, re.compile(pat, re.I)) for name, pat in EXCLUDE_PATTERNS]
+
+# Vendors that carry no brand information. Slug-matched on the whole string, so
+# a real brand like "Kajal Perfumes" is untouched.
+JUNK_VENDOR_SLUGS = {
+    "", "general", "shop", "store", "default", "default-title", "n-a", "na",
+    "none", "null", "brand", "brands", "no-brand", "nobrand", "unbranded",
+    "other", "others", "misc", "miscellaneous", "fragrance", "fragrances",
+    "perfume", "perfumes", "cologne", "designer", "unknown",
+}
+
+# One house, several vendor spellings. Derived from the vendor strings actually
+# seen in the first live run and hand-checked -- deliberately a static map, not
+# a rule computed at runtime, because a key that changes when a new store
+# appears would orphan its own price history.
+#
+# "Prada" / "Agatha Ruiz de la Prada" look like this pattern and are NOT the
+# same house; that is why this is reviewed rather than inferred.
+BRAND_ALIASES = {
+    "christian-dior": "Dior",
+    "by-kilian": "By Kilian", "kilian": "By Kilian",
+    "parfums-de-marly-paris": "Parfums de Marly",
+    "lattafa-pride": "Lattafa",
+    "mind-games-fragrance": "Mind Games",
+    "goldfield-and-banks": "Goldfield & Banks",
+    "initio": "Initio Parfums Prives",
+    "initio-parfums": "Initio Parfums Prives",
+    "roja": "Roja Parfums",
+    "liquides-imaginaires": "Les Liquides Imaginaires",
+    "byredo-parfums": "Byredo",
+    "editions-de-parfums-frederic-malle": "Frederic Malle",
+    "thierry-mugler": "Mugler",
+    "memo": "Memo Paris",
+    "ex-nihilo-paris": "Ex Nihilo",
+    "reinvented-parfums": "Reinvented",
+    "jusbox-perfumes": "Jusbox",
+    "kajal-perfumes": "Kajal",
+    "ferragamo": "Salvatore Ferragamo",
+    "micallef": "M. Micallef", "m-micallef": "M. Micallef",
+    "jovoy": "Jovoy Paris",
+    "maison-martin-margiela": "Maison Margiela",
+    "harmonist": "The Harmonist",
+}
 
 # Ordered: first match wins, so the "eau de X" long forms are tested before the
 # bare words they contain.
@@ -215,11 +261,12 @@ def clean_brand(vendor: str | None, store_name: str | None = None,
     brand = _tidy(brand)
     if not brand:
         return None
-    dead = {slugify(store_name), slugify(store_domain or "").replace("-com", ""),
-            "general", "", "n-a", "none", "no-brand", "unbranded"}
-    if slugify(brand) in dead:
+    slug = slugify(brand)
+    if slug in JUNK_VENDOR_SLUGS:
         return None
-    return brand
+    if slug in (slugify(store_name), slugify(store_domain or "").replace("-com", "")):
+        return None
+    return BRAND_ALIASES.get(slug, brand)
 
 
 CONNECTOR_TOKENS = {"de", "du", "des", "di", "of", "and", "the", "le", "la",
@@ -245,16 +292,55 @@ def _brand_prefix_candidates(brand: str) -> list[str]:
     return sorted(set(candidates), key=len, reverse=True)
 
 
-def _strip_brand_prefix(text: str, brand: str) -> str:
-    """Strip the brand only where it *fronts* the title.
+def _strip_brand(text: str, brand: str) -> str:
+    """Remove the brand from a title wherever the store put it.
 
-    Prefix-only on purpose: "Bleu de Chanel" has to survive brand == "Chanel".
+    Front (`Dior Sauvage`), tail (`Sauvage Dior`, `Craze Armaf`) and `by Brand`
+    all appear in the same catalogue, so all three are stripped, repeatedly --
+    `Chrome Azzaro by Loris Azzaro` needs two passes.
+
+    The tail case is the dangerous one: `Bleu de Chanel` also ends in its brand.
+    A trailing brand is only removed when the word before it is not a connector,
+    which keeps `Bleu de Chanel` and `L'Eau d'Issey` whole while still cutting
+    `Sauvage Dior` down to `Sauvage`. Nothing is ever stripped to nothing.
     """
-    for candidate in _brand_prefix_candidates(brand):
-        stripped = re.sub(r"^\s*" + re.escape(candidate) + r"\b[\s,\-–—:|]*",
-                          " ", text, flags=re.I)
-        if stripped != text and _tidy(stripped):     # never strip away the whole name
-            return stripped
+    candidates = _brand_prefix_candidates(brand)
+    changed = True
+    while changed:
+        changed = False
+        for candidate in candidates:
+            escaped = re.escape(candidate)
+
+            stripped = re.sub(r"\bby\s+" + escaped + r"\b", " ", text, flags=re.I)
+            if stripped != text and _tidy(stripped):
+                text, changed = stripped, True
+                break
+
+            stripped = re.sub(r"^\s*" + escaped + r"\b[\s,\-–—:|]*", " ", text, flags=re.I)
+            if stripped != text and _tidy(stripped):
+                text, changed = stripped, True
+                break
+
+            match = re.search(r"^(.*?)[\s,\-–—:|]+" + escaped + r"[\s.]*$", text, flags=re.I)
+            if match:
+                head = _tidy(match.group(1))
+                words = head.split()
+                if words and words[-1].lower().strip(".&,") not in CONNECTOR_TOKENS:
+                    text, changed = head, True
+                    break
+        if changed:
+            continue
+
+        # A trailing designer credit -- "Chrome Azzaro by Loris Azzaro". Only
+        # dropped when the brand still appears in what comes before it, so a
+        # name that genuinely ends in "by someone" is left alone.
+        match = re.search(r"^(.*?)[\s,\-–—:|]+by\s+[\w'’.\-]+(?:\s+[\w'’.\-]+){0,2}\s*$",
+                          text, flags=re.I)
+        if match:
+            head = _tidy(match.group(1))
+            if head and any(re.search(r"\b" + re.escape(c) + r"\b", head, re.I)
+                            for c in candidates):
+                text, changed = head, True
     return text
 
 
@@ -267,8 +353,7 @@ def parse_line(product_title: str, brand: str | None,
     text = PREORDER_RE.sub(" ", text)
 
     if brand:
-        text = re.sub(r"\bby\s+" + re.escape(brand) + r"\b", " ", text, flags=re.I)
-        text = _strip_brand_prefix(text, brand)
+        text = _strip_brand(text, brand)
 
     text = SIZE_ML_RE.sub(" ", text)
     text = SIZE_OZ_RE.sub(" ", text)
@@ -279,6 +364,12 @@ def parse_line(product_title: str, brand: str | None,
     for rx in FILLER_RE:
         text = rx.sub(" ", text)
     text = re.sub(r"\bnew\b[\s,\-–—:]*$", " ", text, flags=re.I)
+    text = _tidy(text)
+
+    if brand:
+        # Second pass: `Sauvage Dior for Men EDP` only ends in its brand once
+        # the filler and concentration have gone.
+        text = _strip_brand(text, brand)
 
     text = _tidy(text)
     text = LEADING_ORPHAN_RE.sub("", text)

@@ -264,3 +264,90 @@ class TestBrandPrefixVariants(unittest.TestCase):
         self.assertEqual(
             N.parse_line("Bleu de Chanel EDT 100ml", "Chanel", "EDT"),
             "Bleu de Chanel")
+
+
+class TestRealBottleSizes(unittest.TestCase):
+    """Sizes the first live run showed us we were missing."""
+
+    def test_oz_forms_that_are_real_bottles(self):
+        for oz, expected in [("2.0 oz", 60), ("2.4 OZ", 70), ("2.7 oz", 80),
+                             ("3.0 OZ", 90), ("3.04 oz", 90), ("4.0 OZ", 120),
+                             ("4.1 oz", 120)]:
+            self.assertEqual(N.parse_size_ml(oz), expected, oz)
+
+    def test_denser_set_does_not_break_the_old_snaps(self):
+        for oz, expected in [("1.6 OZ", 50), ("1.7 oz", 50), ("2.5 OZ", 75),
+                             ("3.3 oz", 100), ("3.4 OZ", 100), ("4.2 oz", 125)]:
+            self.assertEqual(N.parse_size_ml(oz), expected, oz)
+
+    def test_genuinely_odd_sizes_stay_unsnapped(self):
+        self.assertAlmostEqual(N.parse_size_ml("3.5 oz"), 103.5, places=1)
+        self.assertAlmostEqual(N.parse_size_ml("8.4 oz"), 248.4, places=1)
+
+
+class TestJunkVendors(unittest.TestCase):
+    def test_junk_vendor_yields_no_brand(self):
+        for vendor in ["Shop", "shop", "Store", "Default", "Fragrance",
+                       "Perfumes", "N/A", "Unbranded", "General"]:
+            self.assertIsNone(N.clean_brand(vendor, "Aura Fragrance"), vendor)
+
+    def test_real_brand_containing_a_junk_word_survives(self):
+        self.assertEqual(N.clean_brand("Kajal Perfumes", "Aura"), "Kajal")
+        self.assertEqual(N.clean_brand("Roja Parfums", "Aura"), "Roja Parfums")
+
+
+class TestBrandAliases(unittest.TestCase):
+    def test_same_house_different_spelling(self):
+        self.assertEqual(N.clean_brand("Christian Dior", "Aura"), "Dior")
+        self.assertEqual(N.clean_brand("Dior", "Aura"), "Dior")
+        self.assertEqual(N.clean_brand("Kilian", "Aura"), "By Kilian")
+        self.assertEqual(N.clean_brand("Parfums de Marly Paris", "Aura"), "Parfums de Marly")
+        self.assertEqual(N.clean_brand("Parfums De Marly", "Aura"), "Parfums De Marly")
+
+    def test_lookalike_houses_are_not_merged(self):
+        # tokens of "Prada" are a subset of "Agatha Ruiz de la Prada" -- different houses
+        self.assertEqual(N.clean_brand("Prada", "Aura"), "Prada")
+        self.assertEqual(N.clean_brand("Agatha Ruiz de la Prada", "Aura"),
+                         "Agatha Ruiz de la Prada")
+
+    def test_alias_collapses_the_key(self):
+        a = N.canonical_key(N.clean_brand("Dior", "Aura"), "Sauvage", "EDP")
+        b = N.canonical_key(N.clean_brand("Christian Dior", "Aura"), "Sauvage", "EDP")
+        self.assertEqual(a, b)
+
+
+class TestBrandAnywhereInTitle(unittest.TestCase):
+    """This catalogue puts the vendor at the front, the back, or after 'by'."""
+
+    def test_trailing_brand_stripped(self):
+        self.assertEqual(N.parse_line("Sauvage Dior for Men EDP", "Dior", "EDP"), "Sauvage")
+        self.assertEqual(N.parse_line("Craze Armaf", "Armaf", None), "Craze")
+        self.assertEqual(N.parse_line("Amber Oud Carbon Al Haramain Unisex EDP",
+                                      "Al Haramain", "EDP"), "Amber Oud Carbon")
+
+    def test_by_brand_when_vendor_itself_starts_with_by(self):
+        self.assertEqual(N.parse_line("Black Phantom by Kilian Unisex EDP",
+                                      "By Kilian", "EDP"), "Black Phantom")
+        self.assertEqual(N.parse_line("Good Girl Gone Bad by Kilian for Women EDP",
+                                      "By Kilian", "EDP"), "Good Girl Gone Bad")
+
+    def test_repeated_passes(self):
+        self.assertEqual(N.parse_line("Chrome Azzaro by Loris Azzaro", "Azzaro", None),
+                         "Chrome")
+
+    def test_connector_before_brand_protects_the_name(self):
+        self.assertEqual(N.parse_line("Bleu de Chanel EDT 100ml", "Chanel", "EDT"),
+                         "Bleu de Chanel")
+        self.assertEqual(N.parse_line("L'Eau d'Issey Issey Miyake for Women EDT",
+                                      "Issey Miyake", "EDT"), "L'Eau d'Issey")
+
+    def test_never_strips_to_nothing(self):
+        self.assertEqual(N.parse_line("Dior", "Dior", None), "Dior")
+
+    def test_spelling_variants_now_share_a_key(self):
+        rows = [("Sauvage Dior for Men EDP", "Christian Dior"),
+                ("Dior Sauvage for Men EDP", "Dior")]
+        keys = {N.canonical_key(N.clean_brand(v, "Aura"),
+                                N.parse_line(t, N.clean_brand(v, "Aura"), "EDP"), "EDP")
+                for t, v in rows}
+        self.assertEqual(keys, {"dior|sauvage|EDP"})
