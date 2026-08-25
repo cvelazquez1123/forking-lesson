@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Aura Fragrance",
+    "domain": "aurafragrance.com",
+    "platform": "shopify",
+    "collection": null,
+    "free_ship_threshold": null,
+    "flat_ship": null,
+    "sells_dupes": false,
+    "active": true
+  },
+  {
+    "name": "Venba Fragrance",
+    "domain": "venbafragrance.com",
+    "platform": "shopify",
+    "collection": null,
+    "free_ship_threshold": 100,
+    "flat_ship": null,
+    "sells_dupes": false,
+    "active": true
+  },
+  {
+    "name": "Beauty House",
+    "domain": "beautyhouse.com",
+    "platform": "shopify",
+    "collection": "fragrances",
+    "free_ship_threshold": 99,
+    "flat_ship": null,
+    "sells_dupes": false,
+    "active": true
+  },
+  {
+    "name": "Fragrance Nevaeh",
+    "domain": "fragrance-nevaeh.com",
+    "platform": "shopify",
+    "collection": "full-catalog",
+    "free_ship_threshold": 100,
+    "flat_ship": null,
+    "sells_dupes": false,
+    "active": true
+  },
+  {
+    "name": "Aromatix",
+    "domain": "shoparomatix.com",
+    "platform": "shopify",
+    "collection": null,
+    "free_ship_threshold": null,
+    "flat_ship": null,
+    "sells_dupes": true,
+    "active": true
+  },
+  {
+    "name": "Olfactory Factory",
+    "domain": "olfactoryfactoryllc.com",
+    "platform": "unknown",
+    "collection": null,
+    "free_ship_threshold": null,
+    "flat_ship": null,
+    "sells_dupes": false,
+    "active": true
+  }
+]

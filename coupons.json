@@ -1,0 +1,19 @@
+{
+  "fragrance-nevaeh.com": {
+    "type": "pct",
+    "code": "20OFFTODAY",
+    "pct": 20,
+    "expires": null
+  },
+  "shoparomatix.com": {
+    "type": "flat",
+    "code": "AROMATIX10",
+    "amount": 10,
+    "min_spend": 180,
+    "expires": null
+  },
+  "aurafragrance.com": null,
+  "venbafragrance.com": null,
+  "beautyhouse.com": null,
+  "olfactoryfactoryllc.com": null
+}

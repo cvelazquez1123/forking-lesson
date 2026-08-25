@@ -1,0 +1,15 @@
+# Netlify serves the static PWA out of web/. No build step -- index.json is
+# committed by the scrape workflow.
+[build]
+  publish = "web"
+  command = ""
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

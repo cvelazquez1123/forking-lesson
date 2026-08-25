@@ -1,0 +1,119 @@
+{
+  "_comment": "SYNTHETIC fixture. NOT scraped data. Hand-written to mirror the shape of a Shopify /products.json payload and the messy title conventions these discounters use, so the parser can be eyeballed offline. Prices and titles are invented.",
+  "products": [
+    {
+      "id": 1001, "handle": "parfums-de-marly-layton",
+      "title": "Parfums de Marly Layton Eau De Parfum For Men",
+      "vendor": "Parfums De Marly", "product_type": "Eau De Parfum",
+      "variants": [
+        {"id": 21001, "title": "4.2 OZ Tester Box (same liquid, plainer box)", "price": "189.99", "available": true},
+        {"id": 21002, "title": "4.2 OZ Regular Box", "price": "234.00", "available": true},
+        {"id": 21003, "title": "2 ML Sample Vial", "price": "8.99", "available": true},
+        {"id": 21004, "title": "1.0 OZ", "price": "119.00", "available": true}
+      ]
+    },
+    {
+      "id": 1002, "handle": "pdm-haltane",
+      "title": "Parfums de Marly Haltane EDP 125ml",
+      "vendor": "Parfums De Marly", "product_type": "Eau De Parfum",
+      "variants": [
+        {"id": 21010, "title": "Haltane Tester (PRE - ORDER)", "price": "179.99", "available": true},
+        {"id": 21011, "title": "Sealed", "price": "215.00", "available": false}
+      ]
+    },
+    {
+      "id": 1003, "handle": "xerjoff-naxos",
+      "title": "NEW Xerjoff Naxos by Xerjoff Spray for men 3.4 oz",
+      "vendor": "General Xerjoff", "product_type": "Parfum",
+      "variants": [
+        {"id": 21020, "title": "Default Title", "price": "255.00", "available": true}
+      ]
+    },
+    {
+      "id": 1004, "handle": "initio-oud-for-greatness",
+      "title": "Initio Oud For Greatness 90ml Extrait",
+      "vendor": "Initio Parfums Prives", "product_type": "Extrait de Parfum",
+      "variants": [
+        {"id": 21030, "title": "90ml Unboxed", "price": "249.00", "available": true},
+        {"id": 21031, "title": "90ml Sealed", "price": "279.00", "available": true}
+      ]
+    },
+    {
+      "id": 1005, "handle": "dior-sauvage-elixir",
+      "title": "Dior Sauvage Elixir 100ml",
+      "vendor": "Christian Dior", "product_type": "Fragrance",
+      "variants": [
+        {"id": 21040, "title": "3.4 oz / 100 ml Tester", "price": "128.50", "available": true},
+        {"id": 21041, "title": "60ml", "price": "99.00", "available": true},
+        {"id": 21042, "title": "30ml", "price": "68.00", "available": true}
+      ]
+    },
+    {
+      "id": 1006, "handle": "chanel-bleu-de-chanel",
+      "title": "Bleu de Chanel by Chanel Eau de Toilette Spray for Men 100ml",
+      "vendor": "Chanel", "product_type": "Eau De Toilette",
+      "variants": [
+        {"id": 21050, "title": "3.4 OZ", "price": "112.00", "available": true},
+        {"id": 21051, "title": "1.7 OZ Regular Box", "price": "86.00", "available": true}
+      ]
+    },
+    {
+      "id": 1007, "handle": "creed-aventus-gift-set",
+      "title": "Creed Aventus Gift Set (100ml + 10ml Travel Spray)",
+      "vendor": "Creed", "product_type": "Eau De Parfum",
+      "variants": [
+        {"id": 21060, "title": "Set", "price": "399.00", "available": true}
+      ]
+    },
+    {
+      "id": 1008, "handle": "lattafa-khamrah",
+      "title": "Lattafa Khamrah Eau De Parfum 100ml Unisex",
+      "vendor": "Lattafa", "product_type": "Eau De Parfum",
+      "variants": [
+        {"id": 21070, "title": "100ml", "price": "32.99", "available": true},
+        {"id": 21071, "title": "100ml Tester", "price": "27.50", "available": true}
+      ]
+    },
+    {
+      "id": 1009, "handle": "ysl-myslf",
+      "title": "Yves Saint Laurent MYSLF Eau de Parfum 3.4 oz Tester",
+      "vendor": "Yves Saint Laurent", "product_type": "",
+      "variants": [
+        {"id": 21080, "title": "Default Title", "price": "97.00", "available": true}
+      ]
+    },
+    {
+      "id": 1010, "handle": "le-labo-santal-33-deodorant",
+      "title": "Le Labo Santal 33 Deodorant Stick 75ml",
+      "vendor": "Le Labo", "product_type": "Deodorant",
+      "variants": [
+        {"id": 21090, "title": "75ml", "price": "42.00", "available": true}
+      ]
+    },
+    {
+      "id": 1011, "handle": "lv-limmensite",
+      "title": "Louis Vuitton L'Immensité 100ml EDP Tester Box",
+      "vendor": "Louis Vuitton", "product_type": "Eau De Parfum",
+      "variants": [
+        {"id": 21100, "title": "100ml", "price": "289.00", "available": true}
+      ]
+    },
+    {
+      "id": 1012, "handle": "aura-shipping-insurance",
+      "title": "Shipping Insurance / Package Protection",
+      "vendor": "Aura Fragrance", "product_type": "Add-On",
+      "variants": [
+        {"id": 21110, "title": "Insurance", "price": "4.99", "available": true}
+      ]
+    },
+    {
+      "id": 1013, "handle": "tom-ford-tobacco-vanille",
+      "title": "Tom Ford Tobacco Vanille 100ml",
+      "vendor": "Tom Ford", "product_type": "Eau De Parfum",
+      "variants": [
+        {"id": 21120, "title": "3.4 OZ Unboxed (no cap)", "price": "218.00", "available": true},
+        {"id": 21121, "title": "8.4 OZ", "price": "425.00", "available": true}
+      ]
+    }
+  ]
+}

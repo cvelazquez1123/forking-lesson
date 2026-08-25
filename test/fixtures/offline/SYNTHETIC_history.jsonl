@@ -1,0 +1,421 @@
+{"_comment": "SYNTHETIC price history. NOT real observations. Feeds the demo build's 'vs 90-day low' line."}
+{"best_landed": 93.39, "best_price_per_ml": 0.9339, "best_store": "Fragrance Nevaeh", "date": "2026-05-29", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 102.13, "best_price_per_ml": 1.0213, "best_store": "Fragrance Nevaeh", "date": "2026-05-29", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 218.84, "best_price_per_ml": 2.4316, "best_store": "Fragrance Nevaeh", "date": "2026-05-29", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 21.21, "best_price_per_ml": 0.2121, "best_store": "Fragrance Nevaeh", "date": "2026-05-29", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 14.39, "best_price_per_ml": 0.1439, "best_store": "Aromatix", "date": "2026-05-29", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 277.71, "best_price_per_ml": 2.7771, "best_store": "Aura Fragrance", "date": "2026-05-29", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 133.31, "best_price_per_ml": 1.3331, "best_store": "Aromatix", "date": "2026-05-29", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 156.84, "best_price_per_ml": 1.2547, "best_store": "Venba Fragrance", "date": "2026-05-29", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 149.43, "best_price_per_ml": 1.1954, "best_store": "Fragrance Nevaeh", "date": "2026-05-29", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 406.98, "best_price_per_ml": 1.6384, "best_store": "Aura Fragrance", "date": "2026-05-29", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 206.92, "best_price_per_ml": 0.833, "best_store": "Aromatix", "date": "2026-05-29", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 201.81, "best_price_per_ml": 2.0181, "best_store": "Venba Fragrance", "date": "2026-05-29", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 81.94, "best_price_per_ml": 0.8194, "best_store": "Venba Fragrance", "date": "2026-05-29", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 58.94, "best_price_per_ml": 0.5894, "best_store": "Aromatix", "date": "2026-05-29", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 89.02, "best_price_per_ml": 0.8902, "best_store": "Fragrance Nevaeh", "date": "2026-06-01", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 103.93, "best_price_per_ml": 1.0393, "best_store": "Fragrance Nevaeh", "date": "2026-06-01", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 217.73, "best_price_per_ml": 2.4192, "best_store": "Fragrance Nevaeh", "date": "2026-06-01", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 25.82, "best_price_per_ml": 0.2582, "best_store": "Fragrance Nevaeh", "date": "2026-06-01", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 14.53, "best_price_per_ml": 0.1453, "best_store": "Aromatix", "date": "2026-06-01", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 279.7, "best_price_per_ml": 2.797, "best_store": "Aura Fragrance", "date": "2026-06-01", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 163.82, "best_price_per_ml": 1.6382, "best_store": "Aromatix", "date": "2026-06-01", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 140.64, "best_price_per_ml": 1.1251, "best_store": "Venba Fragrance", "date": "2026-06-01", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 180.15, "best_price_per_ml": 1.4412, "best_store": "Fragrance Nevaeh", "date": "2026-06-01", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 393.61, "best_price_per_ml": 1.5846, "best_store": "Aura Fragrance", "date": "2026-06-01", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 210.74, "best_price_per_ml": 0.8484, "best_store": "Aromatix", "date": "2026-06-01", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 203.16, "best_price_per_ml": 2.0316, "best_store": "Venba Fragrance", "date": "2026-06-01", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 79.77, "best_price_per_ml": 0.7977, "best_store": "Venba Fragrance", "date": "2026-06-01", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 58.81, "best_price_per_ml": 0.5881, "best_store": "Aromatix", "date": "2026-06-01", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 90.27, "best_price_per_ml": 0.9027, "best_store": "Fragrance Nevaeh", "date": "2026-06-04", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 112.85, "best_price_per_ml": 1.1285, "best_store": "Fragrance Nevaeh", "date": "2026-06-04", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 218.27, "best_price_per_ml": 2.4252, "best_store": "Fragrance Nevaeh", "date": "2026-06-04", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 22.79, "best_price_per_ml": 0.2279, "best_store": "Fragrance Nevaeh", "date": "2026-06-04", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 14.43, "best_price_per_ml": 0.1443, "best_store": "Aromatix", "date": "2026-06-04", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 258.24, "best_price_per_ml": 2.5824, "best_store": "Aura Fragrance", "date": "2026-06-04", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 133.37, "best_price_per_ml": 1.3337, "best_store": "Aromatix", "date": "2026-06-04", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 146.25, "best_price_per_ml": 1.17, "best_store": "Venba Fragrance", "date": "2026-06-04", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 173.49, "best_price_per_ml": 1.3879, "best_store": "Fragrance Nevaeh", "date": "2026-06-04", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 406.41, "best_price_per_ml": 1.6361, "best_store": "Aura Fragrance", "date": "2026-06-04", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 219.49, "best_price_per_ml": 0.8836, "best_store": "Aromatix", "date": "2026-06-04", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 226.49, "best_price_per_ml": 2.2649, "best_store": "Venba Fragrance", "date": "2026-06-04", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 82.47, "best_price_per_ml": 0.8247, "best_store": "Venba Fragrance", "date": "2026-06-04", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 52.44, "best_price_per_ml": 0.5244, "best_store": "Aromatix", "date": "2026-06-04", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 103.66, "best_price_per_ml": 1.0366, "best_store": "Fragrance Nevaeh", "date": "2026-06-07", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 115.77, "best_price_per_ml": 1.1577, "best_store": "Fragrance Nevaeh", "date": "2026-06-07", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 199.51, "best_price_per_ml": 2.2168, "best_store": "Fragrance Nevaeh", "date": "2026-06-07", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 23.85, "best_price_per_ml": 0.2385, "best_store": "Fragrance Nevaeh", "date": "2026-06-07", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 14.36, "best_price_per_ml": 0.1436, "best_store": "Aromatix", "date": "2026-06-07", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 310.46, "best_price_per_ml": 3.1046, "best_store": "Aura Fragrance", "date": "2026-06-07", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 155.62, "best_price_per_ml": 1.5562, "best_store": "Aromatix", "date": "2026-06-07", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 149.12, "best_price_per_ml": 1.193, "best_store": "Venba Fragrance", "date": "2026-06-07", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 184.71, "best_price_per_ml": 1.4777, "best_store": "Fragrance Nevaeh", "date": "2026-06-07", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 377.72, "best_price_per_ml": 1.5206, "best_store": "Aura Fragrance", "date": "2026-06-07", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 224.83, "best_price_per_ml": 0.9051, "best_store": "Aromatix", "date": "2026-06-07", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 235.05, "best_price_per_ml": 2.3505, "best_store": "Venba Fragrance", "date": "2026-06-07", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 76.84, "best_price_per_ml": 0.7684, "best_store": "Venba Fragrance", "date": "2026-06-07", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 54.77, "best_price_per_ml": 0.5477, "best_store": "Aromatix", "date": "2026-06-07", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 87.18, "best_price_per_ml": 0.8718, "best_store": "Fragrance Nevaeh", "date": "2026-06-10", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 115.0, "best_price_per_ml": 1.15, "best_store": "Fragrance Nevaeh", "date": "2026-06-10", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 224.24, "best_price_per_ml": 2.4916, "best_store": "Fragrance Nevaeh", "date": "2026-06-10", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 23.85, "best_price_per_ml": 0.2385, "best_store": "Fragrance Nevaeh", "date": "2026-06-10", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 15.48, "best_price_per_ml": 0.1548, "best_store": "Aromatix", "date": "2026-06-10", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 274.37, "best_price_per_ml": 2.7437, "best_store": "Aura Fragrance", "date": "2026-06-10", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 154.49, "best_price_per_ml": 1.5449, "best_store": "Aromatix", "date": "2026-06-10", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 159.9, "best_price_per_ml": 1.2792, "best_store": "Venba Fragrance", "date": "2026-06-10", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 169.72, "best_price_per_ml": 1.3578, "best_store": "Fragrance Nevaeh", "date": "2026-06-10", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 409.07, "best_price_per_ml": 1.6468, "best_store": "Aura Fragrance", "date": "2026-06-10", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 246.54, "best_price_per_ml": 0.9925, "best_store": "Aromatix", "date": "2026-06-10", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 244.41, "best_price_per_ml": 2.4441, "best_store": "Venba Fragrance", "date": "2026-06-10", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 82.86, "best_price_per_ml": 0.8286, "best_store": "Venba Fragrance", "date": "2026-06-10", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 56.93, "best_price_per_ml": 0.5693, "best_store": "Aromatix", "date": "2026-06-10", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 87.65, "best_price_per_ml": 0.8765, "best_store": "Fragrance Nevaeh", "date": "2026-06-13", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 115.83, "best_price_per_ml": 1.1583, "best_store": "Fragrance Nevaeh", "date": "2026-06-13", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 218.66, "best_price_per_ml": 2.4296, "best_store": "Fragrance Nevaeh", "date": "2026-06-13", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 26.06, "best_price_per_ml": 0.2606, "best_store": "Fragrance Nevaeh", "date": "2026-06-13", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 15.31, "best_price_per_ml": 0.1531, "best_store": "Aromatix", "date": "2026-06-13", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 272.5, "best_price_per_ml": 2.725, "best_store": "Aura Fragrance", "date": "2026-06-13", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 144.21, "best_price_per_ml": 1.4421, "best_store": "Aromatix", "date": "2026-06-13", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 162.51, "best_price_per_ml": 1.3001, "best_store": "Venba Fragrance", "date": "2026-06-13", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 148.86, "best_price_per_ml": 1.1909, "best_store": "Fragrance Nevaeh", "date": "2026-06-13", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 409.59, "best_price_per_ml": 1.6489, "best_store": "Aura Fragrance", "date": "2026-06-13", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 211.98, "best_price_per_ml": 0.8534, "best_store": "Aromatix", "date": "2026-06-13", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 203.12, "best_price_per_ml": 2.0312, "best_store": "Venba Fragrance", "date": "2026-06-13", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 75.1, "best_price_per_ml": 0.751, "best_store": "Venba Fragrance", "date": "2026-06-13", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 58.22, "best_price_per_ml": 0.5822, "best_store": "Aromatix", "date": "2026-06-13", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 89.14, "best_price_per_ml": 0.8914, "best_store": "Fragrance Nevaeh", "date": "2026-06-16", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 104.54, "best_price_per_ml": 1.0454, "best_store": "Fragrance Nevaeh", "date": "2026-06-16", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 206.49, "best_price_per_ml": 2.2943, "best_store": "Fragrance Nevaeh", "date": "2026-06-16", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 25.42, "best_price_per_ml": 0.2542, "best_store": "Fragrance Nevaeh", "date": "2026-06-16", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 12.93, "best_price_per_ml": 0.1293, "best_store": "Aromatix", "date": "2026-06-16", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 283.08, "best_price_per_ml": 2.8308, "best_store": "Aura Fragrance", "date": "2026-06-16", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 149.64, "best_price_per_ml": 1.4964, "best_store": "Aromatix", "date": "2026-06-16", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 170.05, "best_price_per_ml": 1.3604, "best_store": "Venba Fragrance", "date": "2026-06-16", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 178.69, "best_price_per_ml": 1.4295, "best_store": "Fragrance Nevaeh", "date": "2026-06-16", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 446.9, "best_price_per_ml": 1.7991, "best_store": "Aura Fragrance", "date": "2026-06-16", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 217.65, "best_price_per_ml": 0.8762, "best_store": "Aromatix", "date": "2026-06-16", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 218.0, "best_price_per_ml": 2.18, "best_store": "Venba Fragrance", "date": "2026-06-16", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 80.71, "best_price_per_ml": 0.8071, "best_store": "Venba Fragrance", "date": "2026-06-16", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 59.65, "best_price_per_ml": 0.5965, "best_store": "Aromatix", "date": "2026-06-16", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 107.23, "best_price_per_ml": 1.0723, "best_store": "Fragrance Nevaeh", "date": "2026-06-19", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 102.13, "best_price_per_ml": 1.0213, "best_store": "Fragrance Nevaeh", "date": "2026-06-19", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 196.29, "best_price_per_ml": 2.181, "best_store": "Fragrance Nevaeh", "date": "2026-06-19", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 22.05, "best_price_per_ml": 0.2205, "best_store": "Fragrance Nevaeh", "date": "2026-06-19", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 13.42, "best_price_per_ml": 0.1342, "best_store": "Aromatix", "date": "2026-06-19", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 285.38, "best_price_per_ml": 2.8538, "best_store": "Aura Fragrance", "date": "2026-06-19", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 150.96, "best_price_per_ml": 1.5096, "best_store": "Aromatix", "date": "2026-06-19", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 148.24, "best_price_per_ml": 1.1859, "best_store": "Venba Fragrance", "date": "2026-06-19", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 148.18, "best_price_per_ml": 1.1854, "best_store": "Fragrance Nevaeh", "date": "2026-06-19", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 405.61, "best_price_per_ml": 1.6329, "best_store": "Aura Fragrance", "date": "2026-06-19", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 222.32, "best_price_per_ml": 0.895, "best_store": "Aromatix", "date": "2026-06-19", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 225.53, "best_price_per_ml": 2.2553, "best_store": "Venba Fragrance", "date": "2026-06-19", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 91.83, "best_price_per_ml": 0.9183, "best_store": "Venba Fragrance", "date": "2026-06-19", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 57.26, "best_price_per_ml": 0.5726, "best_store": "Aromatix", "date": "2026-06-19", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 97.57, "best_price_per_ml": 0.9757, "best_store": "Fragrance Nevaeh", "date": "2026-06-22", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 113.74, "best_price_per_ml": 1.1374, "best_store": "Fragrance Nevaeh", "date": "2026-06-22", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 220.04, "best_price_per_ml": 2.4449, "best_store": "Fragrance Nevaeh", "date": "2026-06-22", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 21.11, "best_price_per_ml": 0.2111, "best_store": "Fragrance Nevaeh", "date": "2026-06-22", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 15.56, "best_price_per_ml": 0.1556, "best_store": "Aromatix", "date": "2026-06-22", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 304.34, "best_price_per_ml": 3.0434, "best_store": "Aura Fragrance", "date": "2026-06-22", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 160.44, "best_price_per_ml": 1.6044, "best_store": "Aromatix", "date": "2026-06-22", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 167.05, "best_price_per_ml": 1.3364, "best_store": "Venba Fragrance", "date": "2026-06-22", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 162.71, "best_price_per_ml": 1.3017, "best_store": "Fragrance Nevaeh", "date": "2026-06-22", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 403.75, "best_price_per_ml": 1.6254, "best_store": "Aura Fragrance", "date": "2026-06-22", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 208.66, "best_price_per_ml": 0.84, "best_store": "Aromatix", "date": "2026-06-22", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 228.92, "best_price_per_ml": 2.2892, "best_store": "Venba Fragrance", "date": "2026-06-22", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 75.16, "best_price_per_ml": 0.7516, "best_store": "Venba Fragrance", "date": "2026-06-22", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 49.58, "best_price_per_ml": 0.4958, "best_store": "Aromatix", "date": "2026-06-22", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 90.88, "best_price_per_ml": 0.9088, "best_store": "Fragrance Nevaeh", "date": "2026-06-25", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 102.42, "best_price_per_ml": 1.0242, "best_store": "Fragrance Nevaeh", "date": "2026-06-25", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 204.08, "best_price_per_ml": 2.2675, "best_store": "Fragrance Nevaeh", "date": "2026-06-25", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 21.1, "best_price_per_ml": 0.211, "best_store": "Fragrance Nevaeh", "date": "2026-06-25", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 12.68, "best_price_per_ml": 0.1268, "best_store": "Aromatix", "date": "2026-06-25", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 263.93, "best_price_per_ml": 2.6393, "best_store": "Aura Fragrance", "date": "2026-06-25", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 134.76, "best_price_per_ml": 1.3476, "best_store": "Aromatix", "date": "2026-06-25", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 151.79, "best_price_per_ml": 1.2143, "best_store": "Venba Fragrance", "date": "2026-06-25", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 148.97, "best_price_per_ml": 1.1918, "best_store": "Fragrance Nevaeh", "date": "2026-06-25", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 447.84, "best_price_per_ml": 1.8029, "best_store": "Aura Fragrance", "date": "2026-06-25", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 234.91, "best_price_per_ml": 0.9457, "best_store": "Aromatix", "date": "2026-06-25", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 204.69, "best_price_per_ml": 2.0469, "best_store": "Venba Fragrance", "date": "2026-06-25", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 78.71, "best_price_per_ml": 0.7871, "best_store": "Venba Fragrance", "date": "2026-06-25", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 53.03, "best_price_per_ml": 0.5303, "best_store": "Aromatix", "date": "2026-06-25", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 94.27, "best_price_per_ml": 0.9427, "best_store": "Fragrance Nevaeh", "date": "2026-06-28", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 101.44, "best_price_per_ml": 1.0144, "best_store": "Fragrance Nevaeh", "date": "2026-06-28", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 228.25, "best_price_per_ml": 2.5361, "best_store": "Fragrance Nevaeh", "date": "2026-06-28", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 26.06, "best_price_per_ml": 0.2606, "best_store": "Fragrance Nevaeh", "date": "2026-06-28", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 14.17, "best_price_per_ml": 0.1417, "best_store": "Aromatix", "date": "2026-06-28", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 285.31, "best_price_per_ml": 2.8531, "best_store": "Aura Fragrance", "date": "2026-06-28", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 134.24, "best_price_per_ml": 1.3424, "best_store": "Aromatix", "date": "2026-06-28", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 142.6, "best_price_per_ml": 1.1408, "best_store": "Venba Fragrance", "date": "2026-06-28", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 160.85, "best_price_per_ml": 1.2868, "best_store": "Fragrance Nevaeh", "date": "2026-06-28", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 391.3, "best_price_per_ml": 1.5753, "best_store": "Aura Fragrance", "date": "2026-06-28", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 245.97, "best_price_per_ml": 0.9902, "best_store": "Aromatix", "date": "2026-06-28", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 205.33, "best_price_per_ml": 2.0533, "best_store": "Venba Fragrance", "date": "2026-06-28", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 74.43, "best_price_per_ml": 0.7443, "best_store": "Venba Fragrance", "date": "2026-06-28", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 60.47, "best_price_per_ml": 0.6047, "best_store": "Aromatix", "date": "2026-06-28", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 97.85, "best_price_per_ml": 0.9785, "best_store": "Fragrance Nevaeh", "date": "2026-07-01", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 102.03, "best_price_per_ml": 1.0203, "best_store": "Fragrance Nevaeh", "date": "2026-07-01", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 213.72, "best_price_per_ml": 2.3747, "best_store": "Fragrance Nevaeh", "date": "2026-07-01", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 20.97, "best_price_per_ml": 0.2097, "best_store": "Fragrance Nevaeh", "date": "2026-07-01", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 14.37, "best_price_per_ml": 0.1437, "best_store": "Aromatix", "date": "2026-07-01", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 317.11, "best_price_per_ml": 3.1711, "best_store": "Aura Fragrance", "date": "2026-07-01", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 160.07, "best_price_per_ml": 1.6007, "best_store": "Aromatix", "date": "2026-07-01", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 163.48, "best_price_per_ml": 1.3078, "best_store": "Venba Fragrance", "date": "2026-07-01", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 157.79, "best_price_per_ml": 1.2623, "best_store": "Fragrance Nevaeh", "date": "2026-07-01", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 400.77, "best_price_per_ml": 1.6134, "best_store": "Aura Fragrance", "date": "2026-07-01", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 211.93, "best_price_per_ml": 0.8532, "best_store": "Aromatix", "date": "2026-07-01", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 235.79, "best_price_per_ml": 2.3579, "best_store": "Venba Fragrance", "date": "2026-07-01", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 83.96, "best_price_per_ml": 0.8396, "best_store": "Venba Fragrance", "date": "2026-07-01", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 58.35, "best_price_per_ml": 0.5835, "best_store": "Aromatix", "date": "2026-07-01", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 93.52, "best_price_per_ml": 0.9352, "best_store": "Fragrance Nevaeh", "date": "2026-07-04", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 103.93, "best_price_per_ml": 1.0393, "best_store": "Fragrance Nevaeh", "date": "2026-07-04", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 226.48, "best_price_per_ml": 2.5164, "best_store": "Fragrance Nevaeh", "date": "2026-07-04", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 26.02, "best_price_per_ml": 0.2602, "best_store": "Fragrance Nevaeh", "date": "2026-07-04", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 15.41, "best_price_per_ml": 0.1541, "best_store": "Aromatix", "date": "2026-07-04", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 306.02, "best_price_per_ml": 3.0602, "best_store": "Aura Fragrance", "date": "2026-07-04", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 158.58, "best_price_per_ml": 1.5858, "best_store": "Aromatix", "date": "2026-07-04", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 165.01, "best_price_per_ml": 1.3201, "best_store": "Venba Fragrance", "date": "2026-07-04", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 156.51, "best_price_per_ml": 1.2521, "best_store": "Fragrance Nevaeh", "date": "2026-07-04", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 414.75, "best_price_per_ml": 1.6697, "best_store": "Aura Fragrance", "date": "2026-07-04", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 221.62, "best_price_per_ml": 0.8922, "best_store": "Aromatix", "date": "2026-07-04", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 198.73, "best_price_per_ml": 1.9873, "best_store": "Venba Fragrance", "date": "2026-07-04", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 74.52, "best_price_per_ml": 0.7452, "best_store": "Venba Fragrance", "date": "2026-07-04", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 52.19, "best_price_per_ml": 0.5219, "best_store": "Aromatix", "date": "2026-07-04", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 91.98, "best_price_per_ml": 0.9198, "best_store": "Fragrance Nevaeh", "date": "2026-07-07", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 115.61, "best_price_per_ml": 1.1561, "best_store": "Fragrance Nevaeh", "date": "2026-07-07", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 233.36, "best_price_per_ml": 2.5929, "best_store": "Fragrance Nevaeh", "date": "2026-07-07", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 23.18, "best_price_per_ml": 0.2318, "best_store": "Fragrance Nevaeh", "date": "2026-07-07", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 15.68, "best_price_per_ml": 0.1568, "best_store": "Aromatix", "date": "2026-07-07", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 317.72, "best_price_per_ml": 3.1772, "best_store": "Aura Fragrance", "date": "2026-07-07", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 163.12, "best_price_per_ml": 1.6312, "best_store": "Aromatix", "date": "2026-07-07", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 151.82, "best_price_per_ml": 1.2146, "best_store": "Venba Fragrance", "date": "2026-07-07", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 156.28, "best_price_per_ml": 1.2502, "best_store": "Fragrance Nevaeh", "date": "2026-07-07", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 387.8, "best_price_per_ml": 1.5612, "best_store": "Aura Fragrance", "date": "2026-07-07", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 213.45, "best_price_per_ml": 0.8593, "best_store": "Aromatix", "date": "2026-07-07", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 207.48, "best_price_per_ml": 2.0748, "best_store": "Venba Fragrance", "date": "2026-07-07", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 85.67, "best_price_per_ml": 0.8567, "best_store": "Venba Fragrance", "date": "2026-07-07", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 59.84, "best_price_per_ml": 0.5984, "best_store": "Aromatix", "date": "2026-07-07", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 104.67, "best_price_per_ml": 1.0467, "best_store": "Fragrance Nevaeh", "date": "2026-07-10", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 110.31, "best_price_per_ml": 1.1031, "best_store": "Fragrance Nevaeh", "date": "2026-07-10", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 218.94, "best_price_per_ml": 2.4327, "best_store": "Fragrance Nevaeh", "date": "2026-07-10", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 25.04, "best_price_per_ml": 0.2504, "best_store": "Fragrance Nevaeh", "date": "2026-07-10", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 12.95, "best_price_per_ml": 0.1295, "best_store": "Aromatix", "date": "2026-07-10", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 296.67, "best_price_per_ml": 2.9667, "best_store": "Aura Fragrance", "date": "2026-07-10", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 161.61, "best_price_per_ml": 1.6161, "best_store": "Aromatix", "date": "2026-07-10", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 166.5, "best_price_per_ml": 1.332, "best_store": "Venba Fragrance", "date": "2026-07-10", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 176.1, "best_price_per_ml": 1.4088, "best_store": "Fragrance Nevaeh", "date": "2026-07-10", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 411.1, "best_price_per_ml": 1.655, "best_store": "Aura Fragrance", "date": "2026-07-10", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 212.51, "best_price_per_ml": 0.8555, "best_store": "Aromatix", "date": "2026-07-10", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 236.65, "best_price_per_ml": 2.3665, "best_store": "Venba Fragrance", "date": "2026-07-10", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 80.22, "best_price_per_ml": 0.8022, "best_store": "Venba Fragrance", "date": "2026-07-10", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 58.62, "best_price_per_ml": 0.5862, "best_store": "Aromatix", "date": "2026-07-10", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 107.53, "best_price_per_ml": 1.0753, "best_store": "Fragrance Nevaeh", "date": "2026-07-13", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 108.23, "best_price_per_ml": 1.0823, "best_store": "Fragrance Nevaeh", "date": "2026-07-13", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 206.98, "best_price_per_ml": 2.2998, "best_store": "Fragrance Nevaeh", "date": "2026-07-13", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 25.81, "best_price_per_ml": 0.2581, "best_store": "Fragrance Nevaeh", "date": "2026-07-13", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 15.0, "best_price_per_ml": 0.15, "best_store": "Aromatix", "date": "2026-07-13", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 265.13, "best_price_per_ml": 2.6513, "best_store": "Aura Fragrance", "date": "2026-07-13", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 135.61, "best_price_per_ml": 1.3561, "best_store": "Aromatix", "date": "2026-07-13", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 144.31, "best_price_per_ml": 1.1545, "best_store": "Venba Fragrance", "date": "2026-07-13", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 181.89, "best_price_per_ml": 1.4551, "best_store": "Fragrance Nevaeh", "date": "2026-07-13", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 441.56, "best_price_per_ml": 1.7776, "best_store": "Aura Fragrance", "date": "2026-07-13", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 210.84, "best_price_per_ml": 0.8488, "best_store": "Aromatix", "date": "2026-07-13", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 238.51, "best_price_per_ml": 2.3851, "best_store": "Venba Fragrance", "date": "2026-07-13", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 92.34, "best_price_per_ml": 0.9234, "best_store": "Venba Fragrance", "date": "2026-07-13", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 56.85, "best_price_per_ml": 0.5685, "best_store": "Aromatix", "date": "2026-07-13", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 93.97, "best_price_per_ml": 0.9397, "best_store": "Fragrance Nevaeh", "date": "2026-07-16", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 112.03, "best_price_per_ml": 1.1203, "best_store": "Fragrance Nevaeh", "date": "2026-07-16", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 194.14, "best_price_per_ml": 2.1571, "best_store": "Fragrance Nevaeh", "date": "2026-07-16", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 20.9, "best_price_per_ml": 0.209, "best_store": "Fragrance Nevaeh", "date": "2026-07-16", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 15.79, "best_price_per_ml": 0.1579, "best_store": "Aromatix", "date": "2026-07-16", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 295.97, "best_price_per_ml": 2.9597, "best_store": "Aura Fragrance", "date": "2026-07-16", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 148.88, "best_price_per_ml": 1.4888, "best_store": "Aromatix", "date": "2026-07-16", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 171.83, "best_price_per_ml": 1.3746, "best_store": "Venba Fragrance", "date": "2026-07-16", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 164.26, "best_price_per_ml": 1.3141, "best_store": "Fragrance Nevaeh", "date": "2026-07-16", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 447.62, "best_price_per_ml": 1.802, "best_store": "Aura Fragrance", "date": "2026-07-16", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 245.82, "best_price_per_ml": 0.9896, "best_store": "Aromatix", "date": "2026-07-16", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 207.81, "best_price_per_ml": 2.0781, "best_store": "Venba Fragrance", "date": "2026-07-16", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 78.71, "best_price_per_ml": 0.7871, "best_store": "Venba Fragrance", "date": "2026-07-16", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 52.36, "best_price_per_ml": 0.5236, "best_store": "Aromatix", "date": "2026-07-16", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 91.57, "best_price_per_ml": 0.9157, "best_store": "Fragrance Nevaeh", "date": "2026-07-19", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 112.97, "best_price_per_ml": 1.1297, "best_store": "Fragrance Nevaeh", "date": "2026-07-19", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 200.24, "best_price_per_ml": 2.2249, "best_store": "Fragrance Nevaeh", "date": "2026-07-19", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 23.03, "best_price_per_ml": 0.2303, "best_store": "Fragrance Nevaeh", "date": "2026-07-19", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 13.1, "best_price_per_ml": 0.131, "best_store": "Aromatix", "date": "2026-07-19", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 312.7, "best_price_per_ml": 3.127, "best_store": "Aura Fragrance", "date": "2026-07-19", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 143.14, "best_price_per_ml": 1.4314, "best_store": "Aromatix", "date": "2026-07-19", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 155.11, "best_price_per_ml": 1.2409, "best_store": "Venba Fragrance", "date": "2026-07-19", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 169.85, "best_price_per_ml": 1.3588, "best_store": "Fragrance Nevaeh", "date": "2026-07-19", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 450.62, "best_price_per_ml": 1.8141, "best_store": "Aura Fragrance", "date": "2026-07-19", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 224.98, "best_price_per_ml": 0.9057, "best_store": "Aromatix", "date": "2026-07-19", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 243.06, "best_price_per_ml": 2.4306, "best_store": "Venba Fragrance", "date": "2026-07-19", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 83.38, "best_price_per_ml": 0.8338, "best_store": "Venba Fragrance", "date": "2026-07-19", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 55.3, "best_price_per_ml": 0.553, "best_store": "Aromatix", "date": "2026-07-19", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 97.75, "best_price_per_ml": 0.9775, "best_store": "Fragrance Nevaeh", "date": "2026-07-22", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 98.84, "best_price_per_ml": 0.9884, "best_store": "Fragrance Nevaeh", "date": "2026-07-22", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 208.83, "best_price_per_ml": 2.3203, "best_store": "Fragrance Nevaeh", "date": "2026-07-22", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 21.79, "best_price_per_ml": 0.2179, "best_store": "Fragrance Nevaeh", "date": "2026-07-22", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 12.69, "best_price_per_ml": 0.1269, "best_store": "Aromatix", "date": "2026-07-22", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 305.58, "best_price_per_ml": 3.0558, "best_store": "Aura Fragrance", "date": "2026-07-22", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 137.11, "best_price_per_ml": 1.3711, "best_store": "Aromatix", "date": "2026-07-22", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 155.65, "best_price_per_ml": 1.2452, "best_store": "Venba Fragrance", "date": "2026-07-22", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 175.16, "best_price_per_ml": 1.4013, "best_store": "Fragrance Nevaeh", "date": "2026-07-22", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 418.36, "best_price_per_ml": 1.6842, "best_store": "Aura Fragrance", "date": "2026-07-22", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 220.11, "best_price_per_ml": 0.8861, "best_store": "Aromatix", "date": "2026-07-22", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 223.14, "best_price_per_ml": 2.2314, "best_store": "Venba Fragrance", "date": "2026-07-22", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 84.39, "best_price_per_ml": 0.8439, "best_store": "Venba Fragrance", "date": "2026-07-22", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 58.41, "best_price_per_ml": 0.5841, "best_store": "Aromatix", "date": "2026-07-22", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 88.64, "best_price_per_ml": 0.8864, "best_store": "Fragrance Nevaeh", "date": "2026-07-25", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 112.32, "best_price_per_ml": 1.1232, "best_store": "Fragrance Nevaeh", "date": "2026-07-25", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 199.72, "best_price_per_ml": 2.2191, "best_store": "Fragrance Nevaeh", "date": "2026-07-25", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 22.29, "best_price_per_ml": 0.2229, "best_store": "Fragrance Nevaeh", "date": "2026-07-25", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 15.15, "best_price_per_ml": 0.1515, "best_store": "Aromatix", "date": "2026-07-25", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 286.84, "best_price_per_ml": 2.8684, "best_store": "Aura Fragrance", "date": "2026-07-25", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 150.05, "best_price_per_ml": 1.5005, "best_store": "Aromatix", "date": "2026-07-25", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 165.71, "best_price_per_ml": 1.3257, "best_store": "Venba Fragrance", "date": "2026-07-25", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 182.18, "best_price_per_ml": 1.4574, "best_store": "Fragrance Nevaeh", "date": "2026-07-25", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 407.87, "best_price_per_ml": 1.642, "best_store": "Aura Fragrance", "date": "2026-07-25", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 234.84, "best_price_per_ml": 0.9454, "best_store": "Aromatix", "date": "2026-07-25", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 222.5, "best_price_per_ml": 2.225, "best_store": "Venba Fragrance", "date": "2026-07-25", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 83.58, "best_price_per_ml": 0.8358, "best_store": "Venba Fragrance", "date": "2026-07-25", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 57.29, "best_price_per_ml": 0.5729, "best_store": "Aromatix", "date": "2026-07-25", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 96.2, "best_price_per_ml": 0.962, "best_store": "Fragrance Nevaeh", "date": "2026-07-28", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 111.65, "best_price_per_ml": 1.1165, "best_store": "Fragrance Nevaeh", "date": "2026-07-28", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 210.63, "best_price_per_ml": 2.3403, "best_store": "Fragrance Nevaeh", "date": "2026-07-28", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 25.79, "best_price_per_ml": 0.2579, "best_store": "Fragrance Nevaeh", "date": "2026-07-28", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 14.92, "best_price_per_ml": 0.1492, "best_store": "Aromatix", "date": "2026-07-28", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 310.55, "best_price_per_ml": 3.1055, "best_store": "Aura Fragrance", "date": "2026-07-28", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 162.69, "best_price_per_ml": 1.6269, "best_store": "Aromatix", "date": "2026-07-28", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 148.12, "best_price_per_ml": 1.185, "best_store": "Venba Fragrance", "date": "2026-07-28", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 168.96, "best_price_per_ml": 1.3517, "best_store": "Fragrance Nevaeh", "date": "2026-07-28", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 454.25, "best_price_per_ml": 1.8287, "best_store": "Aura Fragrance", "date": "2026-07-28", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 246.54, "best_price_per_ml": 0.9925, "best_store": "Aromatix", "date": "2026-07-28", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 204.12, "best_price_per_ml": 2.0412, "best_store": "Venba Fragrance", "date": "2026-07-28", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 76.27, "best_price_per_ml": 0.7627, "best_store": "Venba Fragrance", "date": "2026-07-28", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 54.2, "best_price_per_ml": 0.542, "best_store": "Aromatix", "date": "2026-07-28", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 87.9, "best_price_per_ml": 0.879, "best_store": "Fragrance Nevaeh", "date": "2026-07-31", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 104.37, "best_price_per_ml": 1.0437, "best_store": "Fragrance Nevaeh", "date": "2026-07-31", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 191.38, "best_price_per_ml": 2.1265, "best_store": "Fragrance Nevaeh", "date": "2026-07-31", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 24.35, "best_price_per_ml": 0.2435, "best_store": "Fragrance Nevaeh", "date": "2026-07-31", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 15.19, "best_price_per_ml": 0.1519, "best_store": "Aromatix", "date": "2026-07-31", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 311.87, "best_price_per_ml": 3.1187, "best_store": "Aura Fragrance", "date": "2026-07-31", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 136.52, "best_price_per_ml": 1.3652, "best_store": "Aromatix", "date": "2026-07-31", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 164.17, "best_price_per_ml": 1.3134, "best_store": "Venba Fragrance", "date": "2026-07-31", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 172.74, "best_price_per_ml": 1.3819, "best_store": "Fragrance Nevaeh", "date": "2026-07-31", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 380.03, "best_price_per_ml": 1.5299, "best_store": "Aura Fragrance", "date": "2026-07-31", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 248.72, "best_price_per_ml": 1.0013, "best_store": "Aromatix", "date": "2026-07-31", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 245.55, "best_price_per_ml": 2.4555, "best_store": "Venba Fragrance", "date": "2026-07-31", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 78.1, "best_price_per_ml": 0.781, "best_store": "Venba Fragrance", "date": "2026-07-31", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 60.49, "best_price_per_ml": 0.6049, "best_store": "Aromatix", "date": "2026-07-31", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 95.01, "best_price_per_ml": 0.9501, "best_store": "Fragrance Nevaeh", "date": "2026-08-03", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 110.5, "best_price_per_ml": 1.105, "best_store": "Fragrance Nevaeh", "date": "2026-08-03", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 234.94, "best_price_per_ml": 2.6105, "best_store": "Fragrance Nevaeh", "date": "2026-08-03", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 25.21, "best_price_per_ml": 0.2521, "best_store": "Fragrance Nevaeh", "date": "2026-08-03", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 13.19, "best_price_per_ml": 0.1319, "best_store": "Aromatix", "date": "2026-08-03", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 281.94, "best_price_per_ml": 2.8194, "best_store": "Aura Fragrance", "date": "2026-08-03", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 148.52, "best_price_per_ml": 1.4852, "best_store": "Aromatix", "date": "2026-08-03", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 150.93, "best_price_per_ml": 1.2074, "best_store": "Venba Fragrance", "date": "2026-08-03", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 155.35, "best_price_per_ml": 1.2428, "best_store": "Fragrance Nevaeh", "date": "2026-08-03", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 396.3, "best_price_per_ml": 1.5954, "best_store": "Aura Fragrance", "date": "2026-08-03", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 240.48, "best_price_per_ml": 0.9681, "best_store": "Aromatix", "date": "2026-08-03", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 198.25, "best_price_per_ml": 1.9825, "best_store": "Venba Fragrance", "date": "2026-08-03", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 84.36, "best_price_per_ml": 0.8436, "best_store": "Venba Fragrance", "date": "2026-08-03", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 54.18, "best_price_per_ml": 0.5418, "best_store": "Aromatix", "date": "2026-08-03", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 86.72, "best_price_per_ml": 0.8672, "best_store": "Fragrance Nevaeh", "date": "2026-08-06", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 106.63, "best_price_per_ml": 1.0663, "best_store": "Fragrance Nevaeh", "date": "2026-08-06", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 217.56, "best_price_per_ml": 2.4173, "best_store": "Fragrance Nevaeh", "date": "2026-08-06", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 23.53, "best_price_per_ml": 0.2353, "best_store": "Fragrance Nevaeh", "date": "2026-08-06", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 12.88, "best_price_per_ml": 0.1288, "best_store": "Aromatix", "date": "2026-08-06", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 317.53, "best_price_per_ml": 3.1753, "best_store": "Aura Fragrance", "date": "2026-08-06", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 157.58, "best_price_per_ml": 1.5758, "best_store": "Aromatix", "date": "2026-08-06", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 173.16, "best_price_per_ml": 1.3853, "best_store": "Venba Fragrance", "date": "2026-08-06", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 151.94, "best_price_per_ml": 1.2155, "best_store": "Fragrance Nevaeh", "date": "2026-08-06", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 391.38, "best_price_per_ml": 1.5756, "best_store": "Aura Fragrance", "date": "2026-08-06", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 205.38, "best_price_per_ml": 0.8268, "best_store": "Aromatix", "date": "2026-08-06", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 236.14, "best_price_per_ml": 2.3614, "best_store": "Venba Fragrance", "date": "2026-08-06", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 79.05, "best_price_per_ml": 0.7905, "best_store": "Venba Fragrance", "date": "2026-08-06", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 50.34, "best_price_per_ml": 0.5034, "best_store": "Aromatix", "date": "2026-08-06", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 95.54, "best_price_per_ml": 0.9554, "best_store": "Fragrance Nevaeh", "date": "2026-08-09", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 121.05, "best_price_per_ml": 1.2105, "best_store": "Fragrance Nevaeh", "date": "2026-08-09", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 226.83, "best_price_per_ml": 2.5203, "best_store": "Fragrance Nevaeh", "date": "2026-08-09", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 22.19, "best_price_per_ml": 0.2219, "best_store": "Fragrance Nevaeh", "date": "2026-08-09", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 13.15, "best_price_per_ml": 0.1315, "best_store": "Aromatix", "date": "2026-08-09", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 313.29, "best_price_per_ml": 3.1329, "best_store": "Aura Fragrance", "date": "2026-08-09", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 150.35, "best_price_per_ml": 1.5035, "best_store": "Aromatix", "date": "2026-08-09", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 163.62, "best_price_per_ml": 1.309, "best_store": "Venba Fragrance", "date": "2026-08-09", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 151.36, "best_price_per_ml": 1.2109, "best_store": "Fragrance Nevaeh", "date": "2026-08-09", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 372.1, "best_price_per_ml": 1.498, "best_store": "Aura Fragrance", "date": "2026-08-09", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 238.71, "best_price_per_ml": 0.961, "best_store": "Aromatix", "date": "2026-08-09", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 218.5, "best_price_per_ml": 2.185, "best_store": "Venba Fragrance", "date": "2026-08-09", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 75.35, "best_price_per_ml": 0.7535, "best_store": "Venba Fragrance", "date": "2026-08-09", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 60.31, "best_price_per_ml": 0.6031, "best_store": "Aromatix", "date": "2026-08-09", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 100.17, "best_price_per_ml": 1.0017, "best_store": "Fragrance Nevaeh", "date": "2026-08-12", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 118.32, "best_price_per_ml": 1.1832, "best_store": "Fragrance Nevaeh", "date": "2026-08-12", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 191.89, "best_price_per_ml": 2.1321, "best_store": "Fragrance Nevaeh", "date": "2026-08-12", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 25.34, "best_price_per_ml": 0.2534, "best_store": "Fragrance Nevaeh", "date": "2026-08-12", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 12.89, "best_price_per_ml": 0.1289, "best_store": "Aromatix", "date": "2026-08-12", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 309.67, "best_price_per_ml": 3.0967, "best_store": "Aura Fragrance", "date": "2026-08-12", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 146.46, "best_price_per_ml": 1.4646, "best_store": "Aromatix", "date": "2026-08-12", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 150.93, "best_price_per_ml": 1.2074, "best_store": "Venba Fragrance", "date": "2026-08-12", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 168.73, "best_price_per_ml": 1.3498, "best_store": "Fragrance Nevaeh", "date": "2026-08-12", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 452.71, "best_price_per_ml": 1.8225, "best_store": "Aura Fragrance", "date": "2026-08-12", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 217.1, "best_price_per_ml": 0.874, "best_store": "Aromatix", "date": "2026-08-12", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 203.73, "best_price_per_ml": 2.0373, "best_store": "Venba Fragrance", "date": "2026-08-12", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 83.85, "best_price_per_ml": 0.8385, "best_store": "Venba Fragrance", "date": "2026-08-12", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 51.69, "best_price_per_ml": 0.5169, "best_store": "Aromatix", "date": "2026-08-12", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 88.71, "best_price_per_ml": 0.8871, "best_store": "Fragrance Nevaeh", "date": "2026-08-15", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 102.4, "best_price_per_ml": 1.024, "best_store": "Fragrance Nevaeh", "date": "2026-08-15", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 190.31, "best_price_per_ml": 2.1145, "best_store": "Fragrance Nevaeh", "date": "2026-08-15", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 21.89, "best_price_per_ml": 0.2189, "best_store": "Fragrance Nevaeh", "date": "2026-08-15", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 13.68, "best_price_per_ml": 0.1368, "best_store": "Aromatix", "date": "2026-08-15", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 273.81, "best_price_per_ml": 2.7381, "best_store": "Aura Fragrance", "date": "2026-08-15", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 156.62, "best_price_per_ml": 1.5662, "best_store": "Aromatix", "date": "2026-08-15", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 149.2, "best_price_per_ml": 1.1936, "best_store": "Venba Fragrance", "date": "2026-08-15", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 166.74, "best_price_per_ml": 1.3339, "best_store": "Fragrance Nevaeh", "date": "2026-08-15", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 383.26, "best_price_per_ml": 1.5429, "best_store": "Aura Fragrance", "date": "2026-08-15", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 221.18, "best_price_per_ml": 0.8904, "best_store": "Aromatix", "date": "2026-08-15", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 198.19, "best_price_per_ml": 1.9819, "best_store": "Venba Fragrance", "date": "2026-08-15", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 78.68, "best_price_per_ml": 0.7868, "best_store": "Venba Fragrance", "date": "2026-08-15", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 48.94, "best_price_per_ml": 0.4894, "best_store": "Aromatix", "date": "2026-08-15", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 102.32, "best_price_per_ml": 1.0232, "best_store": "Fragrance Nevaeh", "date": "2026-08-18", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 112.09, "best_price_per_ml": 1.1209, "best_store": "Fragrance Nevaeh", "date": "2026-08-18", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 196.91, "best_price_per_ml": 2.1879, "best_store": "Fragrance Nevaeh", "date": "2026-08-18", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 23.33, "best_price_per_ml": 0.2333, "best_store": "Fragrance Nevaeh", "date": "2026-08-18", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 15.67, "best_price_per_ml": 0.1567, "best_store": "Aromatix", "date": "2026-08-18", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 261.04, "best_price_per_ml": 2.6104, "best_store": "Aura Fragrance", "date": "2026-08-18", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 158.6, "best_price_per_ml": 1.586, "best_store": "Aromatix", "date": "2026-08-18", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 154.2, "best_price_per_ml": 1.2336, "best_store": "Venba Fragrance", "date": "2026-08-18", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 166.55, "best_price_per_ml": 1.3324, "best_store": "Fragrance Nevaeh", "date": "2026-08-18", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 444.16, "best_price_per_ml": 1.7881, "best_store": "Aura Fragrance", "date": "2026-08-18", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 223.56, "best_price_per_ml": 0.9, "best_store": "Aromatix", "date": "2026-08-18", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 222.56, "best_price_per_ml": 2.2256, "best_store": "Venba Fragrance", "date": "2026-08-18", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 86.86, "best_price_per_ml": 0.8686, "best_store": "Venba Fragrance", "date": "2026-08-18", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 60.86, "best_price_per_ml": 0.6086, "best_store": "Aromatix", "date": "2026-08-18", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 93.8, "best_price_per_ml": 0.938, "best_store": "Fragrance Nevaeh", "date": "2026-08-21", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 119.08, "best_price_per_ml": 1.1908, "best_store": "Fragrance Nevaeh", "date": "2026-08-21", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 221.49, "best_price_per_ml": 2.461, "best_store": "Fragrance Nevaeh", "date": "2026-08-21", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 24.18, "best_price_per_ml": 0.2418, "best_store": "Fragrance Nevaeh", "date": "2026-08-21", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 13.97, "best_price_per_ml": 0.1397, "best_store": "Aromatix", "date": "2026-08-21", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 276.55, "best_price_per_ml": 2.7655, "best_store": "Aura Fragrance", "date": "2026-08-21", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 133.19, "best_price_per_ml": 1.3319, "best_store": "Aromatix", "date": "2026-08-21", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 143.56, "best_price_per_ml": 1.1485, "best_store": "Venba Fragrance", "date": "2026-08-21", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 150.66, "best_price_per_ml": 1.2053, "best_store": "Fragrance Nevaeh", "date": "2026-08-21", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 435.47, "best_price_per_ml": 1.7531, "best_store": "Aura Fragrance", "date": "2026-08-21", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 216.48, "best_price_per_ml": 0.8715, "best_store": "Aromatix", "date": "2026-08-21", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 205.43, "best_price_per_ml": 2.0543, "best_store": "Venba Fragrance", "date": "2026-08-21", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 75.57, "best_price_per_ml": 0.7557, "best_store": "Venba Fragrance", "date": "2026-08-21", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 59.12, "best_price_per_ml": 0.5912, "best_store": "Aromatix", "date": "2026-08-21", "key": "dupe:yves-saint-laurent|myslf|EDP"}
+{"best_landed": 105.32, "best_price_per_ml": 1.0532, "best_store": "Fragrance Nevaeh", "date": "2026-08-24", "key": "chanel|bleu-de-chanel|EDT"}
+{"best_landed": 115.06, "best_price_per_ml": 1.1506, "best_store": "Fragrance Nevaeh", "date": "2026-08-24", "key": "christian-dior|sauvage|Elixir"}
+{"best_landed": 201.31, "best_price_per_ml": 2.2368, "best_store": "Fragrance Nevaeh", "date": "2026-08-24", "key": "initio-parfums-prives|oud-for-greatness|Extrait"}
+{"best_landed": 22.1, "best_price_per_ml": 0.221, "best_store": "Fragrance Nevaeh", "date": "2026-08-24", "key": "lattafa|khamrah|EDP"}
+{"best_landed": 13.62, "best_price_per_ml": 0.1362, "best_store": "Aromatix", "date": "2026-08-24", "key": "dupe:lattafa|khamrah|EDP"}
+{"best_landed": 283.74, "best_price_per_ml": 2.8374, "best_store": "Aura Fragrance", "date": "2026-08-24", "key": "louis-vuitton|l-immensite|EDP"}
+{"best_landed": 136.62, "best_price_per_ml": 1.3662, "best_store": "Aromatix", "date": "2026-08-24", "key": "dupe:louis-vuitton|l-immensite|EDP"}
+{"best_landed": 154.68, "best_price_per_ml": 1.2374, "best_store": "Venba Fragrance", "date": "2026-08-24", "key": "parfums-de-marly|haltane|EDP"}
+{"best_landed": 157.88, "best_price_per_ml": 1.263, "best_store": "Fragrance Nevaeh", "date": "2026-08-24", "key": "parfums-de-marly|layton|EDP"}
+{"best_landed": 455.96, "best_price_per_ml": 1.8356, "best_store": "Aura Fragrance", "date": "2026-08-24", "key": "tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 253.34, "best_price_per_ml": 1.0199, "best_store": "Aromatix", "date": "2026-08-24", "key": "dupe:tom-ford|tobacco-vanille|EDP"}
+{"best_landed": 224.57, "best_price_per_ml": 2.2457, "best_store": "Venba Fragrance", "date": "2026-08-24", "key": "xerjoff|naxos|Parfum"}
+{"best_landed": 78.57, "best_price_per_ml": 0.7857, "best_store": "Venba Fragrance", "date": "2026-08-24", "key": "yves-saint-laurent|myslf|EDP"}
+{"best_landed": 60.65, "best_price_per_ml": 0.6065, "best_store": "Aromatix", "date": "2026-08-24", "key": "dupe:yves-saint-laurent|myslf|EDP"}

@@ -1,0 +1,69 @@
+name: scrape
+
+on:
+  schedule:
+    # every 6h, offset off the hour so we are not part of the :00 stampede
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Test the normalizer
+        # The parse rules are the whole product. If they regress, do not publish.
+        run: python -m unittest discover -s test
+
+      - name: Build index
+        run: python src/build_index.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "fragrance-finder bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/data/index.json web/data/lows.json data/history.jsonl
+          if git diff --cached --quiet; then
+            echo "no change"
+            exit 0
+          fi
+          git commit -m "data: scrape $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for attempt in 1 2 3 4; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            echo "push failed, retry $attempt"
+            sleep $((2 ** attempt))
+          done
+          exit 1
+
+      - name: Summary
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os
+          try:
+              d = json.load(open('web/data/index.json'))
+          except Exception as e:
+              print(f'index.json unreadable: {e}'); raise SystemExit(0)
+          print(f"### {len(d['items'])} fragrances\n")
+          print(f"generated `{d['generated_at']}`\n")
+          print('| store | listings | note |')
+          print('|---|---:|---|')
+          for s in d['stores']:
+              print(f"| {s['domain']} | {s['rows']} | {s.get('error') or ''} |")
+          PY
