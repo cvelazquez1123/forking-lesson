@@ -5,7 +5,7 @@
     "platform": "shopify",
     "collection": null,
     "free_ship_threshold": null,
-    "flat_ship": 10,
+    "flat_ship": null,
     "sells_dupes": false,
     "active": true
   },

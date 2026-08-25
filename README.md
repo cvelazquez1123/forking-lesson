@@ -194,12 +194,17 @@ puts it in the run summary.
 
 ## Known limitations
 
-- **`flat_ship` is a `$10` placeholder for every store**, not a researched
-  rate. Stores with no `free_ship_threshold` (aurafragrance.com,
-  shoparomatix.com) therefore take +$10 on *every* listing — which
-  over-penalises them if they actually ship free. Replace the placeholder with
-  each store's real rate and threshold; it is a one-line edit per store in
-  `stores.json`.
+- **`flat_ship` is a `$10` placeholder** at five of the six stores — a guess,
+  not a researched rate. aurafragrance.com is the exception: it does not charge
+  shipping, so it stays `null` (which the cost model treats as $0).
+  shoparomatix.com has a placeholder rate *and* no known free-ship threshold,
+  so it currently takes +$10 on **every** listing with no way to earn it back.
+  Replace the placeholders with real rates and thresholds; one line per store
+  in `stores.json`.
+- **`flat_ship: null` is overloaded.** The cost model reads it as $0, but the
+  app's store list badges it "ship cost unknown" — true for a store nobody has
+  checked, wrong for aurafragrance.com, which is known to ship free. Use `0`
+  instead of `null` to say "free" unambiguously; the arithmetic is identical.
 - **`olfactoryfactoryllc.com` has never been probed** — no network egress was
   available in the session that built this. The first workflow run either
   promotes it to shopify or logs `NEEDS ADAPTER`.
