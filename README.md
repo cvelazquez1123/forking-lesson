@@ -226,6 +226,13 @@ puts it in the run summary.
 - **Brand falls back to `null`** when `vendor` is empty or is just the store's
   own name. Those rows still index, they just will not merge with the same
   fragrance carried under a real vendor string.
-- `web/data/*.json` currently holds a **demo build from `test/fixtures/offline/`**
-  (the app shows a "Demo data" banner). The first real scrape replaces it and
-  the banner disappears.
+- **Flankers still merge into their base fragrance.** `Acqua di Gio Elixir for
+  Men EDP` parses to `concentration=EDP` and `line=Acqua di Gio`, because
+  `Elixir` is in the concentration vocabulary and `line` is the title minus the
+  concentration — so it shares a key with plain Acqua di Gio EDP. The same goes
+  for `Intense`, `Extreme`, `Absolu`. Fixing it means deciding when those words
+  name a flanker rather than a strength; left open deliberately.
+- **Renaming keys orphans their history.** `data/history.jsonl` is keyed by the
+  canonical key, so a normalization change that renames a key restarts its
+  90-day low. Worth remembering before editing `BRAND_ALIASES` once real
+  history has accumulated.
